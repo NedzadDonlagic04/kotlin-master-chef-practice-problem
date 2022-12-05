@@ -47,8 +47,6 @@ class CompetitionEntry(private val teacher: Teacher, private val dessert: Desser
     fun getRating(): Double {
         if(this.students.size == 0) return 0.0
 
-        val sum: Double = this.grades.sum() / this.grades.size.toDouble()
-
-        return sum
+        return this.grades.sum() / this.grades.size.toDouble()
     }
 }
